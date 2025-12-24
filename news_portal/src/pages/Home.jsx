@@ -436,7 +436,7 @@ export default function Home() {
             <div className="pt-10 mt-10 border-t border-gray-800 ">
                 <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
                     {/* Section title */}
-                    <h2 className="text-sm font-bold tracking-wide uppercase mb-6">
+                    <h2 className="text-lg font-bold tracking-wide uppercase mb-6">
                         Wellness
                     </h2>
 
@@ -445,7 +445,7 @@ export default function Home() {
                         <div className="space-y-2">
                             <img src={pic1} className="w-full h-40 object-cover" />
                             <p className="text-xs text-gray-400">Holly Stapleton</p>
-                            <p className="text-sm font-semibold leading-snug">
+                            <p className="text-lg font-semibold leading-snug">
                                 8 Sex Myths That Experts Wish Would Go Away
                             </p>
                         </div>
@@ -453,7 +453,7 @@ export default function Home() {
                         <div className="space-y-2">
                             <img src={pic2} className="w-full h-40 object-cover" />
                             <p className="text-xs text-gray-400">Shannon Erickson</p>
-                            <p className="text-sm font-semibold leading-snug">
+                            <p className="text-lg font-semibold leading-snug">
                                 Can you get a full body workout in 20 minutes?
                             </p>
                         </div>
@@ -461,7 +461,7 @@ export default function Home() {
                         <div className="space-y-2">
                             <img src={pic3} className="w-full h-40 object-cover" />
                             <p className="text-xs text-gray-400">Matt Darty</p>
-                            <p className="text-sm font-semibold leading-snug">
+                            <p className="text-lg font-semibold leading-snug">
                                 How to Feel Alive Again
                             </p>
                         </div>
@@ -469,7 +469,7 @@ export default function Home() {
                         <div className="space-y-2">
                             <img src={pic4} className="w-full h-40 object-cover" />
                             <p className="text-xs text-gray-400">Chris Klein</p>
-                            <p className="text-sm font-semibold leading-snug">
+                            <p className="text-lg font-semibold leading-snug">
                                 How to Know If You Have Genetic Risk for Alzheimer’s
                             </p>
                         </div>
@@ -490,7 +490,7 @@ export default function Home() {
             <div className="pt-8 my-8">
                 <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
                     {/* Section title */}
-                    <h2 className="text-sm font-bold tracking-wide uppercase mb-6">
+                    <h2 className="text-lg font-bold tracking-wide uppercase mb-6">
                         Wellness
                     </h2>
 
@@ -499,7 +499,7 @@ export default function Home() {
                         <div className="space-y-2">
                             <img src={pic1} className="w-full h-40 object-cover" />
                             <p className="text-xs text-gray-400">Holly Stapleton</p>
-                            <p className="text-sm font-semibold leading-snug">
+                            <p className="text-lg font-semibold leading-snug">
                                 8 Sex Myths That Experts Wish Would Go Away
                             </p>
                         </div>
@@ -507,7 +507,7 @@ export default function Home() {
                         <div className="space-y-2">
                             <img src={pic2} className="w-full h-40 object-cover" />
                             <p className="text-xs text-gray-400">Shannon Erickson</p>
-                            <p className="text-sm font-semibold leading-snug">
+                            <p className="text-lg font-semibold leading-snug">
                                 Can you get a full body workout in 20 minutes?
                             </p>
                         </div>
@@ -515,7 +515,7 @@ export default function Home() {
                         <div className="space-y-2">
                             <img src={pic3} className="w-full h-40 object-cover" />
                             <p className="text-xs text-gray-400">Matt Darty</p>
-                            <p className="text-sm font-semibold leading-snug">
+                            <p className="text-lg font-semibold leading-snug">
                                 How to Feel Alive Again
                             </p>
                         </div>
@@ -523,7 +523,7 @@ export default function Home() {
                         <div className="space-y-2">
                             <img src={pic4} className="w-full h-40 object-cover" />
                             <p className="text-xs text-gray-400">Chris Klein</p>
-                            <p className="text-sm font-semibold leading-snug">
+                            <p className="text-lg font-semibold leading-snug">
                                 How to Know If You Have Genetic Risk for Alzheimer's
                             </p>
                         </div>
