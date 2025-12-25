@@ -533,7 +533,7 @@ export default function Home() {
 
             <div className="w-full bg-gray-100 py-14">
                 <div className="max-w-4xl mx-auto bg-neutral-900 text-white py-10 px-6 text-center">
-                    
+
                     {/* Brand */}
                     <p className="text-lg tracking-widest mb-4 font-serif">
                         THE NEW YORK TIMES
@@ -546,7 +546,7 @@ export default function Home() {
 
                     {/* Price */}
                     <p className="text-sm text-[#FEE07E] mb-6">
-                      100Rs a week for your first six months  
+                        100Rs a week for your first six months
                     </p>
 
                     <button className="bg-white text-black text-xs font-semibold px-6 py-2 uppercase hover:bg-gray-200 transition cursor-pointer">

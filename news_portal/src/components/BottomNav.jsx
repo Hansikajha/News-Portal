@@ -3,14 +3,13 @@ import {NavLink} from 'react-router-dom';
 
 const links=[
   {label:"Home", to:"/"},
-  {label: "Latest News", to: "/latest-news"},
   { label: "Business", to: "/business" },
   {label: "Trending", to:"/trending"},
-  {label: "Politics", to:"/politics"},
   {label:"Sports", to:"/sports"},
   { label: "Entertainment", to: "/entertainment" },
   { label: "Technology", to: "/technology" },
   { label: "Health", to: "/health" },
+  {label: "Latest News", to: "/latest-news"},
 ];
 
 export default function BottomNav() {

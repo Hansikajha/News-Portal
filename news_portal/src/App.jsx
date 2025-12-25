@@ -6,8 +6,6 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import LatestNews from './pages/LatestNews';
 import Trending from './pages/Trending';
-import Politics from './pages/Politics';
-import World from './pages/World';
 import Sports from './pages/Sports';
 import Entertainment from './pages/Entertainment';
 import Business from './pages/Business';
@@ -27,8 +25,6 @@ function App() {
         <Route path='/' element={<Home/>} />
         <Route path='/latest-news' element={<LatestNews/>} />
         <Route path='/trending' element={<Trending/>} />
-        <Route path='/politics' element={<Politics/>} />
-        <Route path='/world' element={<World/>} />
         <Route path='/sports' element={<Sports/>} />
         <Route path='/entertainment' element={<Entertainment/>} />
         <Route path='/business' element={<Business/>} />
