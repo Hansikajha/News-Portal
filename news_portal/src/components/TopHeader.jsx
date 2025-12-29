@@ -30,10 +30,6 @@ export default function TopHeader(){
 
             {/* Right Buttons */}
             <div className='flex items-center justify-center md:justify-end gap-3'>
-                <Link to="/subscribe"
-                  className='px-3 py-1 text-sm bg-blue-400 hover:bg-blue-500 rounded text-white transition-colors'>
-                    Subscribe
-                </Link>
                 <Link to="/login"
                   className='px-3 py-1 text-sm bg-blue-400 hover:bg-blue-500 rounded text-white transition-colors'>
                     Login

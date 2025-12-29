@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import pic1 from "../assets/pic1.jpg";
 import pic2 from "../assets/pic2.jpg";
 import pic3 from "../assets/pic3.webp";
@@ -6,6 +7,8 @@ import pic4 from "../assets/pic4.jpg";
 import pic5 from "../assets/pic5.jpg";
 import pic6 from "../assets/pic6.jpg";
 import pic7 from "../assets/pic7.jpg";
+import adsbanner from "../assets/adsbanner.png";
+import adsbanner2 from "../assets/adsbanner2.png";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 
@@ -28,6 +31,16 @@ export default function Home() {
 
     return (
         <>
+
+            {/* Advertisement banner */}
+            <div className="max-w-full h-[100px] my-3 pt-6">
+                <img
+                    src={adsbanner}
+                    alt="Advertisement"
+                    className="mx-auto max-w-full h-auto"
+                />
+            </div>
+
             <div className="w-full max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 lg:grid-cols-3 gap-8">
 
                 {/* LEFT + CENTER MAIN NEWS (Span 2 columns) */}
@@ -42,9 +55,11 @@ export default function Home() {
                         />
                         <div className="flex-1 space-y-4">
                             <p className="text-xs font-semibold tracking-wide text-gray-700 uppercase">Exclusive</p>
-                            <h2 className="text-3xl font-bold leading-tight">
-                                Microsoft Hires Sam Altman Hours After OpenAI Rejects His Return As C.E.O.
-                            </h2>
+                            <Link to="/description">
+                                <h2 className="text-3xl font-bold leading-tight hover:text-blue-500 cursor-pointer">
+                                    Microsoft swiftly brought Sam Altman on board shortly after OpenAI declined to reinstate him as its chief executive officer.
+                                </h2>
+                            </Link>
                             <p className="text-base text-gray-700">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempora ut reprehenderit
                                 illo blanditiis eius consectetur quasi neque omnis odio?
@@ -66,7 +81,7 @@ export default function Home() {
                                 <p className="text-xs font-semibold tracking-wide text-gray-700 uppercase">
                                     The Headlines
                                 </p>
-                                <h3 className="text-lg font-semibold leading-snug">
+                                <h3 className="text-lg font-semibold leading-snug hover:text-blue-500 cursor-pointer">
                                     Microsoft hires OpenAI's ousted C.E.O., and more.
                                 </h3>
                                 <p className="text-xs text-gray-500">1 hour ago</p>
@@ -83,7 +98,7 @@ export default function Home() {
                                 <p className="text-xs font-semibold tracking-wide text-gray-700 uppercase">
                                     Technology
                                 </p>
-                                <h3 className="text-lg font-semibold leading-snug">
+                                <h3 className="text-lg font-semibold leading-snug hover:text-blue-500 cursor-pointer">
                                     The latest on AI, startups, and the race for innovation.
                                 </h3>
                                 <p className="text-xs text-gray-500">45 mins ago</p>
@@ -96,7 +111,7 @@ export default function Home() {
                     <div className="space-y-6 pt-7">
                         <div className="flex flex-col md:flex-row gap-5">
                             <div className="flex-1 space-y-2">
-                                <h4 className="text-2xl font-semibold leading-snug">
+                                <h4 className="text-2xl font-semibold leading-snug hover:text-blue-500 cursor-pointer">
                                     Microsoft Hires Sam Altman Hours After OpenAI Rejects His Return As C.E.O.
                                 </h4>
                                 <p className="text-base text-gray-700">
@@ -114,7 +129,7 @@ export default function Home() {
 
                         <div className="flex flex-col md:flex-row gap-5">
                             <div className="flex-1 space-y-2">
-                                <h4 className="text-2xl font-semibold leading-snug">
+                                <h4 className="text-2xl font-semibold leading-snug hover:text-blue-500 cursor-pointer">
                                     The stakes of AI leadership after a dramatic weekend.
                                 </h4>
                                 <p className="text-base text-gray-700">
@@ -140,7 +155,7 @@ export default function Home() {
                                 alt="Documentary"
                                 className="w-full h-72 object-cover rounded"
                             />
-                            <p className="text-sm font-semibold leading-snug">
+                            <p className="text-sm font-semibold leading-snug hover:text-blue-500 cursor-pointer">
                                 Do you need to tip self-service kiosks? Here's how to deal with rising tip requests.
                             </p>
                             <p className="text-xs text-gray-500">1 hour ago</p>
@@ -152,7 +167,7 @@ export default function Home() {
                                 alt="Documentary"
                                 className="w-full h-72 object-cover rounded"
                             />
-                            <p className="text-sm font-semibold leading-snug">
+                            <p className="text-sm font-semibold leading-snug hover:text-blue-500 cursor-pointer">
                                 How streaming changed documentaries for pop stars everywhere.
                             </p>
                             <p className="text-xs text-gray-500">2 hours ago</p>
@@ -164,7 +179,7 @@ export default function Home() {
                                 alt="Documentary"
                                 className="w-full h-72 object-cover rounded"
                             />
-                            <p className="text-sm font-semibold leading-snug">
+                            <p className="text-sm font-semibold leading-snug hover:text-blue-500 cursor-pointer">
                                 Inside the growing wave of creator-owned media experiments.
                             </p>
                             <p className="text-xs text-gray-500">3 hours ago</p>
@@ -218,7 +233,7 @@ export default function Home() {
 
                     {/* Caption */}
                     <div className="space-y-2">
-                        <p className="text-2xl font-semibold leading-snug">
+                        <p className="text-2xl font-semibold leading-snug hover:text-blue-500 cursor-pointer">
                             Israel Releases Video It Says Shows Hamas Tunnel Under Hospital
                         </p>
                         <p className="text-base text-gray-700">
@@ -239,7 +254,7 @@ export default function Home() {
                             alt="Documentary"
                             className="w-full h-44 object-cover rounded"
                         />
-                        <h3 className="text-lg font-semibold">
+                        <h3 className="text-lg font-semibold hover:text-blue-500 cursor-pointer">
                             Every Star Wants A Documentary Now. But Is It Just P.R.?
                         </h3>
                         <p className="text-sm text-gray-700">
@@ -258,7 +273,7 @@ export default function Home() {
                                     alt="Documentary"
                                     className="w-full h-32 object-cover rounded"
                                 />
-                                <p className="text-sm font-semibold leading-snug">
+                                <p className="text-sm font-semibold leading-snug hover:text-blue-500 cursor-pointer">
                                     Do you need to tip self-service kiosks?
                                 </p>
                                 <p className="text-xs text-gray-500">1 hour ago</p>
@@ -270,7 +285,7 @@ export default function Home() {
                                     alt="Documentary"
                                     className="w-full h-32 object-cover rounded"
                                 />
-                                <p className="text-sm font-semibold leading-snug">
+                                <p className="text-sm font-semibold leading-snug hover:text-blue-500 cursor-pointer">
                                     Do you need to tip self-service kiosks?
                                 </p>
                                 <p className="text-xs text-gray-500">1 hour ago</p>
@@ -283,16 +298,10 @@ export default function Home() {
                     <hr className="border-gray-300 my-0" />
                     <div className="space-y-2 pt-6">
                         <img
-                            src={pic2}
+                            src={adsbanner2}
                             alt="Documentary"
                             className="w-full h-44 object-cover rounded"
                         />
-                        <h3 className="text-lg font-semibold">
-                            Every Star Wants A Documentary Now. But Is It Just P.R.?
-                        </h3>
-                        <p className="text-sm text-gray-700">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </p>
                     </div>
 
                     {/* 4th Sidebar Feature Story */}
@@ -300,7 +309,7 @@ export default function Home() {
                     <div className="space-y-1 pt-4">
                         <p className="font-bold text-sm tracking-wide">Opinion</p>
                         <p className="text-gray-400 text-sm">Gail Collins</p>
-                        <h3 className="text-lg font-bold leading-snug">
+                        <h3 className="text-lg font-bold leading-snug hover:text-blue-500 cursor-pointer">
                             Every Star Wants A Documentary Now. But Is It Just P.R.?
                         </h3>
                         <p className="text-sm text-gray-600">1 hour ago</p>
@@ -312,7 +321,7 @@ export default function Home() {
                         <div className="flex items-start gap-4 w-full">
 
                             <div className="space-y-2">
-                                <h3 className="text-lg font-bold leading-snug">
+                                <h3 className="text-lg font-bold leading-snug hover:text-blue-500 cursor-pointer">
                                     Every Star Wants A Documentary Now. But Is It Just P.R.?
                                 </h3>
                                 <p className="text-sm text-gray-600">1 hour ago</p>
@@ -331,7 +340,7 @@ export default function Home() {
                     <div className="space-y-1 pb-2 pt-4">
                         <p className="font-bold text-sm tracking-wide">Opinion</p>
                         <p className="text-gray-400 text-sm">Gail Collins</p>
-                        <h3 className="text-lg font-bold leading-snug">
+                        <h3 className="text-lg font-bold leading-snug hover:text-blue-500 cursor-pointer">
                             Every Star Wants A Documentary Now. But Is It Just P.R.?
                         </h3>
                         <p className="text-sm text-gray-600">1 hour ago</p>
@@ -343,7 +352,7 @@ export default function Home() {
                         <div className="flex items-start gap-4 w-full">
 
                             <div className="space-y-2">
-                                <h3 className="text-lg font-bold leading-snug">
+                                <h3 className="text-lg font-bold leading-snug hover:text-blue-500 cursor-pointer">
                                     Every Star Wants A Documentary Now. But Is It Just P.R.?
                                 </h3>
                                 <p className="text-sm text-gray-600">1 hour ago</p>
@@ -363,7 +372,7 @@ export default function Home() {
                         <div className="flex items-start gap-4 w-full">
 
                             <div className="space-y-2">
-                                <h3 className="text-lg font-bold leading-snug">
+                                <h3 className="text-lg font-bold leading-snug hover:text-blue-500 cursor-pointer">
                                     Every Star Wants A Documentary Now. But Is It Just P.R.?
                                 </h3>
                                 <p className="text-sm text-gray-600">1 hour ago</p>
@@ -382,7 +391,7 @@ export default function Home() {
                     <div className="space-y-1 pb-2 pt-4">
                         <p className="font-bold text-sm tracking-wide">Opinion</p>
                         <p className="text-gray-400 text-sm">Gail Collins</p>
-                        <h3 className="text-lg font-bold leading-snug">
+                        <h3 className="text-lg font-bold leading-snug hover:text-blue-500 cursor-pointer">
                             Every Star Wants A Documentary Now. But Is It Just P.R.?
                         </h3>
                         <p className="text-sm text-gray-600">1 hour ago</p>
@@ -394,7 +403,7 @@ export default function Home() {
                         <div className="flex items-start gap-4 w-full">
 
                             <div className="space-y-2 space-x-20">
-                                <h3 className="text-lg font-bold leading-snug">
+                                <h3 className="text-lg font-bold leading-snug hover:text-blue-500 cursor-pointer">
                                     Notes on going home!
                                 </h3>
                                 <p className="text-sm text-gray-600">1 hour ago</p>
@@ -410,30 +419,30 @@ export default function Home() {
                     <hr className="border-gray-300 my-0" />
 
                     {/* 11th sidebar left */}
-                    <div className="pt-4 w-full">
-                        <div className="flex items-start gap-4 w-full">
-
-                            <div className="space-y-2 space-x-20">
-                                <h3 className="text-lg font-bold leading-snug">
-                                    Notes on going home!
-                                </h3>
-                                <p className="text-sm text-gray-600">1 hour ago</p>
-                            </div>
+                        <div className="flex items-start gap-4 w-full pt-4">
 
                             <img
-                                src={pic6}
+                                src={adsbanner2}
                                 alt="News"
-                                className="h-28 w-28 object-cover rounded"
+                                className="h-44 w-full object-cover rounded"
                             />
                         </div>
-                    </div>
 
                 </div>
 
             </div>
 
+             {/* Advertisement banner */}
+            <div className="max-w-full h-[100px] my-3 pt-6">
+                <img
+                    src={adsbanner}
+                    alt="Advertisement"
+                    className="mx-auto max-w-full h-auto"
+                />
+            </div>
+
             {/* Wellness Section */}
-            <div className="pt-10 mt-10 border-t border-gray-800 ">
+            <div className="pt-10 mt-10">
                 <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
                     {/* Section title */}
                     <h2 className="text-lg font-bold tracking-wide uppercase mb-6">
@@ -445,7 +454,7 @@ export default function Home() {
                         <div className="space-y-2">
                             <img src={pic1} className="w-full h-40 object-cover" />
                             <p className="text-xs text-gray-400">Holly Stapleton</p>
-                            <p className="text-lg font-semibold leading-snug">
+                            <p className="text-lg font-semibold leading-snug hover:text-blue-500 cursor-pointer">
                                 8 Sex Myths That Experts Wish Would Go Away
                             </p>
                         </div>
@@ -453,7 +462,7 @@ export default function Home() {
                         <div className="space-y-2">
                             <img src={pic2} className="w-full h-40 object-cover" />
                             <p className="text-xs text-gray-400">Shannon Erickson</p>
-                            <p className="text-lg font-semibold leading-snug">
+                            <p className="text-lg font-semibold leading-snug hover:text-blue-500 cursor-pointer">
                                 Can you get a full body workout in 20 minutes?
                             </p>
                         </div>
@@ -461,7 +470,7 @@ export default function Home() {
                         <div className="space-y-2">
                             <img src={pic3} className="w-full h-40 object-cover" />
                             <p className="text-xs text-gray-400">Matt Darty</p>
-                            <p className="text-lg font-semibold leading-snug">
+                            <p className="text-lg font-semibold leading-snug hover:text-blue-500 cursor-pointer">
                                 How to Feel Alive Again
                             </p>
                         </div>
@@ -469,8 +478,8 @@ export default function Home() {
                         <div className="space-y-2">
                             <img src={pic4} className="w-full h-40 object-cover" />
                             <p className="text-xs text-gray-400">Chris Klein</p>
-                            <p className="text-lg font-semibold leading-snug">
-                                How to Know If You Have Genetic Risk for Alzheimer’s
+                            <p className="text-lg font-semibold leading-snug hover:text-blue-500 cursor-pointer">
+                                How to Know If You Have Genetic Risk for Alzheimer's
                             </p>
                         </div>
                     </div>
@@ -499,7 +508,7 @@ export default function Home() {
                         <div className="space-y-2">
                             <img src={pic1} className="w-full h-40 object-cover" />
                             <p className="text-xs text-gray-400">Holly Stapleton</p>
-                            <p className="text-lg font-semibold leading-snug">
+                            <p className="text-lg font-semibold leading-snug hover:text-blue-500 cursor-pointer">
                                 8 Sex Myths That Experts Wish Would Go Away
                             </p>
                         </div>
@@ -507,7 +516,7 @@ export default function Home() {
                         <div className="space-y-2">
                             <img src={pic2} className="w-full h-40 object-cover" />
                             <p className="text-xs text-gray-400">Shannon Erickson</p>
-                            <p className="text-lg font-semibold leading-snug">
+                            <p className="text-lg font-semibold leading-snug hover:text-blue-500 cursor-pointer">
                                 Can you get a full body workout in 20 minutes?
                             </p>
                         </div>
@@ -515,7 +524,7 @@ export default function Home() {
                         <div className="space-y-2">
                             <img src={pic3} className="w-full h-40 object-cover" />
                             <p className="text-xs text-gray-400">Matt Darty</p>
-                            <p className="text-lg font-semibold leading-snug">
+                            <p className="text-lg font-semibold leading-snug hover:text-blue-500 cursor-pointer">
                                 How to Feel Alive Again
                             </p>
                         </div>
@@ -523,7 +532,7 @@ export default function Home() {
                         <div className="space-y-2">
                             <img src={pic4} className="w-full h-40 object-cover" />
                             <p className="text-xs text-gray-400">Chris Klein</p>
-                            <p className="text-lg font-semibold leading-snug">
+                            <p className="text-lg font-semibold leading-snug hover:text-blue-500 cursor-pointer">
                                 How to Know If You Have Genetic Risk for Alzheimer's
                             </p>
                         </div>
@@ -557,6 +566,15 @@ export default function Home() {
                         Cancle or change anytime.
                     </p>
                 </div>
+            </div>
+
+             {/* Advertisement banner */}
+            <div className="max-w-full h-[100px] my-3">
+                <img
+                    src={adsbanner}
+                    alt="Advertisement"
+                    className="mx-auto max-w-full h-auto"
+                />
             </div>
         </>
     );

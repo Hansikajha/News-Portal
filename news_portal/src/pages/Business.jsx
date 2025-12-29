@@ -13,6 +13,7 @@ import Screener from "../components/Screener";
 import congress from "../assets/congress.jpg";
 import election from "../assets/election.jpg";
 import latestnewsimg2 from "../assets/latestnewsimg2.jpg";
+import adsbanner from "../assets/adsbanner.png";
 
 
 export default function Business() {
@@ -81,9 +82,18 @@ export default function Business() {
       <Trading />
 
       <section className="max-w-7xl mx-auto px-4 py-6">
-        <h1 className="text-gray-800 text-6xl font-extrabold p-5 leading-relaxed text-center border-b border-gray-400">
+        <h1 className="text-gray-800 text-6xl font-extrabold p-5 leading-relaxed text-center border-b border-gray-400 hover:text-blue-500 cursor-pointer">
           सुन फेरि २ लाख ६० हजार नाघ्यो, चाँदी हालसम्मकै उच्च
         </h1>
+
+        {/* Advertisement banner */}
+        <div className="max-w-full h-[100px] my-5">
+          <img
+            src={adsbanner}
+            alt="Advertisement"
+            className="mx-auto max-w-full h-auto"
+          />
+        </div>
 
         <div className="space-y-8 mt-8">
           <div className="flex flex-col lg:flex-row items-stretch">
@@ -96,7 +106,7 @@ export default function Business() {
 
             {/* Right Content */}
             <div className="w-full lg:w-1/2 h-80 bg-gray-100 px-6 flex flex-col justify-center">
-              <h3 className="text-4xl text-gray-800 font-bold mb-4 tracking-wide">
+              <h3 className="text-4xl text-gray-800 font-bold mb-4 tracking-wide hover:text-blue-500 cursor-pointer">
                 यस्तो छ आज सागसब्जी र फलफूलको थोक मूल्य
               </h3>
               <p className="text-md text-gray-800 leading-relaxed tracking-wide">
@@ -118,7 +128,7 @@ export default function Business() {
             {sidebarData.map((item, index) => (
               <div key={index}>
                 <div className="space-y-2">
-                  <h3 className="text-lg font-semibold">{item.title}</h3>
+                  <h3 className="text-lg font-semibold hover:text-blue-500 cursor-pointer">{item.title}</h3>
                   <p className="text-sm text-gray-700">{item.desc}</p>
                 </div>
 
@@ -145,7 +155,7 @@ export default function Business() {
             <div className="space-y-2">
               <img src={pic1} className="w-full h-40 object-cover rounded" />
               <p className="text-xs text-white">Holly Stapleton</p>
-              <p className="text-lg font-semibold leading-snug text-white">
+              <p className="text-lg font-semibold leading-snug text-white hover:text-blue-500 cursor-pointer">
                 8 Sex Myths That Experts Wish Would Go Away
               </p>
             </div>
@@ -153,7 +163,7 @@ export default function Business() {
             <div className="space-y-2">
               <img src={pic2} className="w-full h-40 object-cover rounded" />
               <p className="text-xs text-white">Shannon Erickson</p>
-              <p className="text-lg font-semibold leading-snug text-white">
+              <p className="text-lg font-semibold leading-snug text-white hover:text-blue-500 cursor-pointer">
                 Can you get a full body workout in 20 minutes?
               </p>
             </div>
@@ -161,7 +171,7 @@ export default function Business() {
             <div className="space-y-2">
               <img src={pic3} className="w-full h-40 object-cover rounded" />
               <p className="text-xs text-white">Matt Darty</p>
-              <p className="text-lg font-semibold leading-snug text-white">
+              <p className="text-lg font-semibold leading-snug text-white hover:text-blue-500 cursor-pointer">
                 How to Feel Alive Again
               </p>
             </div>
@@ -169,7 +179,7 @@ export default function Business() {
             <div className="space-y-2">
               <img src={pic4} className="w-full h-40 object-cover rounded" />
               <p className="text-xs text-white">Chris Klein</p>
-              <p className="text-lg font-semibold leading-snug text-white">
+              <p className="text-lg font-semibold leading-snug text-white hover:text-blue-500 cursor-pointer">
                 How to Know If You Have Genetic Risk for Alzheimer's
               </p>
             </div>
@@ -193,7 +203,7 @@ export default function Business() {
               />
 
               <div className="w-full lg:w-1/2 h-80 bg-blue-500 px-6 flex flex-col justify-center rounded-r">
-                <h3 className="text-3xl text-white font-bold mb-4">
+                <h3 className="text-3xl text-white font-bold mb-4 hover:text-gray-800 cursor-pointer">
                   यस्तो छ आज सागसब्जी र फलफूलको थोक मूल्य
                 </h3>
                 <p className="text-md text-white leading-relaxed">
@@ -215,7 +225,7 @@ export default function Business() {
                   <p className="text-xs font-semibold tracking-wide text-gray-700 uppercase">
                     The Headlines
                   </p>
-                  <h3 className="text-lg font-semibold leading-snug">
+                  <h3 className="text-lg font-semibold leading-snug hover:text-blue-500 cursor-pointer">
                     Microsoft hires OpenAI's ousted C.E.O., and more.
                   </h3>
                   <p className="text-xs text-gray-500">1 hour ago</p>
@@ -232,7 +242,7 @@ export default function Business() {
                   <p className="text-xs font-semibold tracking-wide text-gray-700 uppercase">
                     The Headlines
                   </p>
-                  <h3 className="text-lg font-semibold leading-snug">
+                  <h3 className="text-lg font-semibold leading-snug hover:text-blue-500 cursor-pointer">
                     Microsoft hires OpenAI's ousted C.E.O., and more.
                   </h3>
                   <p className="text-xs text-gray-500">1 hour ago</p>
@@ -249,7 +259,7 @@ export default function Business() {
                   <p className="text-xs font-semibold tracking-wide text-gray-700 uppercase">
                     The Headlines
                   </p>
-                  <h3 className="text-lg font-semibold leading-snug">
+                  <h3 className="text-lg font-semibold leading-snug hover:text-blue-500 cursor-pointer">
                     Microsoft hires OpenAI's ousted C.E.O., and more.
                   </h3>
                   <p className="text-xs text-gray-500">1 hour ago</p>
@@ -266,7 +276,7 @@ export default function Business() {
                   <p className="text-xs font-semibold tracking-wide text-gray-700 uppercase">
                     The Headlines
                   </p>
-                  <h3 className="text-lg font-semibold leading-snug">
+                  <h3 className="text-lg font-semibold leading-snug hover:text-blue-500 cursor-pointer">
                     Microsoft hires OpenAI's ousted C.E.O., and more.
                   </h3>
                   <p className="text-xs text-gray-500">1 hour ago</p>
@@ -283,7 +293,7 @@ export default function Business() {
                   <p className="text-xs font-semibold tracking-wide text-gray-700 uppercase">
                     The Headlines
                   </p>
-                  <h3 className="text-lg font-semibold leading-snug">
+                  <h3 className="text-lg font-semibold leading-snug hover:text-blue-500 cursor-pointer">
                     Microsoft hires OpenAI's ousted C.E.O., and more.
                   </h3>
                   <p className="text-xs text-gray-500">1 hour ago</p>
@@ -300,7 +310,7 @@ export default function Business() {
                   <p className="text-xs font-semibold tracking-wide text-gray-700 uppercase">
                     Technology
                   </p>
-                  <h3 className="text-lg font-semibold leading-snug">
+                  <h3 className="text-lg font-semibold leading-snug hover:text-blue-500 cursor-pointer">
                     The latest on AI, startups, and the race for innovation.
                   </h3>
                   <p className="text-xs text-gray-500">45 mins ago</p>
@@ -314,7 +324,7 @@ export default function Business() {
             {sidebarData.map((item, index) => (
               <div key={index}>
                 <div className="space-y-2">
-                  <h3 className="text-lg font-semibold">{item.title}</h3>
+                  <h3 className="text-lg font-semibold hover:text-blue-500 cursor-pointer">{item.title}</h3>
                   <p className="text-sm text-gray-700">{item.desc}</p>
                 </div>
 
@@ -350,7 +360,7 @@ export default function Business() {
                 className="w-full h-56 object-cover rounded"
               />
 
-              <h3 className="text-base font-semibold leading-snug text-gray-700 mt-5">
+              <h3 className="text-base font-semibold leading-snug text-gray-700 mt-5 hover:text-blue-500 cursor-pointer">
                 {item.title}
               </h3>
             </div>

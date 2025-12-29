@@ -83,7 +83,7 @@ export default function Trending() {
             />
 
             <div className="w-full lg:w-1/2 h-80 bg-gray-100 px-6 flex flex-col justify-center">
-              <h3 className="text-4xl text-gray-800 font-bold mb-8 pl-5 tracking-wide">
+              <h3 className="text-4xl text-gray-800 font-bold mb-8 pl-5 tracking-wide hover:text-blue-500 cursor-pointer">
                 बिनिता बाँच्न चाहन्छिन्
               </h3>
               <p className="text-md text-gray-800 leading-relaxed pl-5 tracking-wide">
@@ -105,7 +105,7 @@ export default function Trending() {
                   className="w-full h-[400px] object-cover"
                 />
               </div>
-              <h3 className="text-lg font-semibold text-gray-800 tracking-wide pt-5">
+              <h3 className="text-lg font-semibold text-gray-800 tracking-wide pt-5 hover:text-blue-500 cursor-pointer">
                 {item.title}
               </h3>
             </div>
@@ -126,7 +126,7 @@ export default function Trending() {
                 className="w-full h-[420px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
-              <h3 className="absolute bottom-4 left-4 right-4 text-white text-xl font-semibold">
+              <h3 className="absolute bottom-4 left-4 right-4 text-white text-xl font-semibold hover:text-blue-500 cursor-pointer">
                 बालबालिकालाई मोबाइल चलाउन नदिने होइन, सिकाउने हो
               </h3>
             </div>
@@ -139,7 +139,7 @@ export default function Trending() {
                 className="w-full h-[420px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
-              <h3 className="absolute bottom-4 left-4 right-4 text-white text-lg font-semibold">
+              <h3 className="absolute bottom-4 left-4 right-4 text-white text-lg font-semibold hover:text-blue-500 cursor-pointer">
                 कान नसुन्ने कुकुरका लागि सांकेतिक भाषामा गीत
               </h3>
             </div>
@@ -153,7 +153,7 @@ export default function Trending() {
                     alt="side"
                     className="w-20 h-16 object-cover rounded"
                   />
-                  <p className="text-sm font-medium text-gray-800 leading-snug">
+                  <p className="text-sm font-medium text-gray-800 leading-snug hover:text-blue-500 cursor-pointer">
                     अभिभावकमा धैर्यताको परीक्षा : बच्चाले भनेको मान्नै पर्ने ?
                   </p>
                 </div>
@@ -173,7 +173,7 @@ export default function Trending() {
                   className="w-full h-[400px] object-cover"
                 />
               </div>
-              <h3 className="text-lg font-semibold text-gray-800 tracking-wide pt-5">
+              <h3 className="text-lg font-semibold text-gray-800 tracking-wide pt-5 hover:text-blue-500 cursor-pointer">
                 {item.title}
               </h3>
             </div>
@@ -195,7 +195,7 @@ export default function Trending() {
             <div className="space-y-2">
               <img src={pic1} className="w-full h-[400px] object-cover rounded" />
               <p className="text-xs text-white">Holly Stapleton</p>
-              <p className="text-lg font-semibold leading-snug text-white">
+              <p className="text-lg font-semibold leading-snug text-white hover:text-blue-500 cursor-pointer">
                 8 Sex Myths That Experts Wish Would Go Away
               </p>
             </div>
@@ -203,7 +203,7 @@ export default function Trending() {
             <div className="space-y-2">
               <img src={pic2} className="w-full h-[400px] object-cover rounded" />
               <p className="text-xs text-white">Shannon Erickson</p>
-              <p className="text-lg font-semibold leading-snug text-white">
+              <p className="text-lg font-semibold leading-snug text-white hover:text-blue-500 cursor-pointer">
                 Can you get a full body workout in 20 minutes?
               </p>
             </div>
@@ -211,7 +211,7 @@ export default function Trending() {
             <div className="space-y-2">
               <img src={pic3} className="w-full h-[400px] object-cover rounded" />
               <p className="text-xs text-white">Matt Darty</p>
-              <p className="text-lg font-semibold leading-snug text-white">
+              <p className="text-lg font-semibold leading-snug text-white hover:text-blue-500 cursor-pointer">
                 How to Feel Alive Again
               </p>
             </div>
@@ -219,7 +219,7 @@ export default function Trending() {
             <div className="space-y-2">
               <img src={pic4} className="w-full h-[400px] object-cover rounded" />
               <p className="text-xs text-white">Chris Klein</p>
-              <p className="text-lg font-semibold leading-snug text-white">
+              <p className="text-lg font-semibold leading-snug text-white hover:text-blue-500 cursor-pointer">
                 How to Know If You Have Genetic Risk for Alzheimer's
               </p>
             </div>
@@ -243,7 +243,7 @@ export default function Trending() {
               />
 
               <div className="w-full lg:w-1/2 h-80 bg-blue-500 px-6 flex flex-col justify-center rounded-r">
-                <h3 className="text-3xl text-white font-bold mb-4">
+                <h3 className="text-3xl text-white font-bold mb-4 hover:text-blue-500 cursor-pointer">
                   यस्तो छ आज सागसब्जी र फलफूलको थोक मूल्य
                 </h3>
                 <p className="text-md text-white leading-relaxed">
@@ -265,7 +265,7 @@ export default function Trending() {
                   <p className="text-xs font-semibold tracking-wide text-gray-700 uppercase">
                     The Headlines
                   </p>
-                  <h3 className="text-lg font-semibold leading-snug">
+                  <h3 className="text-lg font-semibold leading-snug hover:text-blue-500 cursor-pointer">
                     Microsoft hires OpenAI's ousted C.E.O., and more.
                   </h3>
                   <p className="text-xs text-gray-500">1 hour ago</p>
@@ -282,7 +282,7 @@ export default function Trending() {
                   <p className="text-xs font-semibold tracking-wide text-gray-700 uppercase">
                     The Headlines
                   </p>
-                  <h3 className="text-lg font-semibold leading-snug">
+                  <h3 className="text-lg font-semibold leading-snug hover:text-blue-500 cursor-pointer">
                     Microsoft hires OpenAI's ousted C.E.O., and more.
                   </h3>
                   <p className="text-xs text-gray-500">1 hour ago</p>
@@ -299,7 +299,7 @@ export default function Trending() {
                   <p className="text-xs font-semibold tracking-wide text-gray-700 uppercase">
                     The Headlines
                   </p>
-                  <h3 className="text-lg font-semibold leading-snug">
+                  <h3 className="text-lg font-semibold leading-snug hover:text-blue-500 cursor-pointer">
                     Microsoft hires OpenAI's ousted C.E.O., and more.
                   </h3>
                   <p className="text-xs text-gray-500">1 hour ago</p>
@@ -316,7 +316,7 @@ export default function Trending() {
                   <p className="text-xs font-semibold tracking-wide text-gray-700 uppercase">
                     The Headlines
                   </p>
-                  <h3 className="text-lg font-semibold leading-snug">
+                  <h3 className="text-lg font-semibold leading-snug hover:text-blue-500 cursor-pointer">
                     Microsoft hires OpenAI's ousted C.E.O., and more.
                   </h3>
                   <p className="text-xs text-gray-500">1 hour ago</p>
@@ -331,7 +331,7 @@ export default function Trending() {
             {sidebarData.map((item, index) => (
               <div key={index}>
                 <div className="space-y-2">
-                  <h3 className="text-lg font-semibold">{item.title}</h3>
+                  <h3 className="text-lg font-semibold hover:text-blue-500 cursor-pointer">{item.title}</h3>
                   <p className="text-sm text-gray-700">{item.desc}</p>
                 </div>
 
@@ -359,7 +359,7 @@ export default function Trending() {
             <div className="space-y-2">
               <img src={pic1} className="w-full h-[400px] object-cover rounded" />
               <p className="text-xs text-gray-800">Holly Stapleton</p>
-              <p className="text-lg font-semibold leading-snug text-gray-800">
+              <p className="text-lg font-semibold leading-snug text-gray-800 hover:text-blue-500 cursor-pointer">
                 8 Sex Myths That Experts Wish Would Go Away
               </p>
             </div>
@@ -367,7 +367,7 @@ export default function Trending() {
             <div className="space-y-2">
               <img src={pic2} className="w-full h-[400px] object-cover rounded" />
               <p className="text-xs text-gray-800">Shannon Erickson</p>
-              <p className="text-lg font-semibold leading-snug text-gray-800">
+              <p className="text-lg font-semibold leading-snug text-gray-800 hover:text-blue-500 cursor-pointer">
                 Can you get a full body workout in 20 minutes?
               </p>
             </div>
@@ -375,7 +375,7 @@ export default function Trending() {
             <div className="space-y-2">
               <img src={pic3} className="w-full h-[400px] object-cover rounded" />
               <p className="text-xs text-gray-800">Matt Darty</p>
-              <p className="text-lg font-semibold leading-snug text-gray-800">
+              <p className="text-lg font-semibold leading-snug text-gray-800 hover:text-blue-500 cursor-pointer">
                 How to Feel Alive Again
               </p>
             </div>
@@ -383,7 +383,7 @@ export default function Trending() {
             <div className="space-y-2">
               <img src={pic4} className="w-full h-[400px] object-cover rounded" />
               <p className="text-xs text-white">Chris Klein</p>
-              <p className="text-lg font-semibold leading-snug text-white">
+              <p className="text-lg font-semibold leading-snug text-white hover:text-blue-500 cursor-pointer">
                 How to Know If You Have Genetic Risk for Alzheimer's
               </p>
             </div>

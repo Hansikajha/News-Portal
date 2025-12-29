@@ -12,7 +12,8 @@ import Business from './pages/Business';
 import Technology from './pages/Technology';
 import Health from './pages/Health';
 import Login from './pages/Login';
-import Subscribe from './pages/Subscribe';
+import Signup from './pages/Signup';
+import Description from './pages/Description';
 
 function App() {
 
@@ -31,7 +32,8 @@ function App() {
         <Route path='/technology' element={<Technology/>} />
         <Route path='/health' element={<Health/>} />
         <Route path='/login' element={<Login />} />
-        <Route path='/subscribe' element={<Subscribe />} />
+        <Route path='/signup' element={<Signup />} />
+        <Route path='/description' element={<Description />} />
       </Routes>
 
       <Footer />

@@ -129,7 +129,7 @@ const newsData=[
 
           {/* Right Content */}
           <div className="bg-gray-100 rounded-r-xs px-6 flex flex-col justify-center">
-            <h3 className="text-3xl text-gray-800 font-bold mb-6">
+            <h3 className="text-3xl text-gray-800 font-bold mb-6 hover:text-blue-500 cursor-pointer">
               यस्तो छ आज सागसब्जी र फलफूलको थोक मूल्य
             </h3>
             <p className="text-md text-gray-800 leading-relaxed">
@@ -149,7 +149,7 @@ const newsData=[
                  className="w-full h-56 object-cover rounded"
                />
 
-               <h3 className="text-base font-semibold leading-snug text-gray-700 mt-5">
+               <h3 className="text-base font-semibold leading-snug text-gray-700 mt-5 hover:text-blue-500 cursor-pointer">
                  {item.title}
                </h3>
             </div>
