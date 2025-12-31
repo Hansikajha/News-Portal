@@ -9,6 +9,7 @@ import pic2 from "../assets/pic2.jpg";
 import pic3 from "../assets/pic3.webp";
 import pic4 from "../assets/pic4.jpg";
 import pic8 from "../assets/pic8.jpg";
+import adsbanner from "../assets/adsbanner.png";
 
 export default function Trending() {
 
@@ -112,7 +113,16 @@ export default function Trending() {
           ))}
         </div>
 
-        {/* ===== Parenting / Lalan-Palan Section ===== */}
+        {/* Advertisement banner */}
+        <div className="max-w-full h-[100px] my-5">
+          <img
+            src={adsbanner}
+            alt="Advertisement"
+            className="mx-auto max-w-full h-auto"
+          />
+        </div>
+
+        {/* ===== Lalan-Palan Section ===== */}
         <div className="mt-14">
           <h2 className="text-2xl font-bold mb-6">लालन-पालन</h2>
 
@@ -344,7 +354,15 @@ export default function Trending() {
 
         </div>
       </section>
-      <hr className="border-gray-300 my-0" />
+
+      {/* Advertisement banner */}
+      <div className="max-w-full h-[100px] my-5">
+        <img
+          src={adsbanner}
+          alt="Advertisement"
+          className="mx-auto max-w-full h-auto"
+        />
+      </div>
 
       {/* Wellness Section */}
       <div className="pt-10 mt-10 border-t border-gray-300">

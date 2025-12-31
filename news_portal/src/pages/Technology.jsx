@@ -13,6 +13,7 @@ import tec1 from "../assets/tec1.jpeg";
 import tec2 from "../assets/tec2.jpeg";
 import tec3 from "../assets/tec3.jpeg";
 import tec4 from "../assets/tec4.jpeg";
+import adsbanner from "../assets/adsbanner.png";
 
 
 export default function Trending() {
@@ -76,6 +77,14 @@ export default function Trending() {
 
   return (
     <>
+
+      <div className="max-w-full h-[100px] my-5">
+        <img
+          src={adsbanner}
+          alt="Advertisement"
+          className="mx-auto max-w-full h-auto"
+        />
+      </div>
       <section className="max-w-7xl mx-auto px-4 py-6">
 
         {/* ===== Featured Section ===== */}
@@ -92,8 +101,8 @@ export default function Trending() {
                 शाओमीले घोषणा गर्दै कीर्तिमानी फास्ट चार्जिङ प्रविधि
               </h3>
               <p className="text-md text-gray-800 leading-relaxed pl-5 tracking-wide">
-                चिनियाँ स्मार्टफोन कम्पनी शाओमीले सोमबार आफ्नो नयाँ Hypercharge fast charging technology सार्वजनिक गर्दैछ । 
-                सबैभन्दा तीव्र गतिको वायरलेस चार्जिङ प्रविधिमा समेत किर्तिमान कायम गरेको शाओमीले HyperCharge प्रविधिमार्फत् तारबाट गरिने 
+                चिनियाँ स्मार्टफोन कम्पनी शाओमीले सोमबार आफ्नो नयाँ Hypercharge fast charging technology सार्वजनिक गर्दैछ ।
+                सबैभन्दा तीव्र गतिको वायरलेस चार्जिङ प्रविधिमा समेत किर्तिमान कायम गरेको शाओमीले HyperCharge प्रविधिमार्फत् तारबाट गरिने
                 चार्जिङ  प्रविधिमा पनि नयाँ कीर्तिमान कायम गर्न …
               </p>
             </div>
@@ -166,6 +175,15 @@ export default function Trending() {
               ))}
             </div>
           </div>
+        </div>
+
+        {/* Advertisement banner */}
+        <div className="max-w-full h-[100px] my-3 pt-6">
+          <img
+            src={adsbanner}
+            alt="Advertisement"
+            className="mx-auto max-w-full h-auto"
+          />
         </div>
 
         {/* ===== Trending Grid (API .map()) ===== */}

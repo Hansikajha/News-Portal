@@ -7,6 +7,8 @@ import enter4 from "../assets/enter4.jpeg";
 import enter5 from "../assets/enter5.jpeg";
 import enter6 from "../assets/enter6.jpeg";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import adsbanner from "../assets/adsbanner.png";
+import adsbanner2 from "../assets/adsbanner2.png";
 
 
 export default function Home() {
@@ -28,6 +30,14 @@ export default function Home() {
 
     return (
         <>
+
+            <div className="max-w-full h-[100px] my-5">
+                <img
+                    src={adsbanner}
+                    alt="Advertisement"
+                    className="mx-auto max-w-full h-auto"
+                />
+            </div>
             <div className="w-full max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 lg:grid-cols-3 gap-8">
 
                 {/* LEFT + CENTER MAIN NEWS (Span 2 columns) */}
@@ -386,22 +396,12 @@ export default function Home() {
                     <hr className="border-gray-300 my-0" />
 
                     {/* 10th sidebar left */}
-                    <div className="pt-4 w-full">
-                        <div className="flex items-start gap-4 w-full">
-
-                            <div className="space-y-2 space-x-20">
-                                <h3 className="text-lg font-bold leading-snug hover:text-blue-500 cursor-pointer">
-                                    Notes on going home!
-                                </h3>
-                                <p className="text-sm text-gray-600">1 hour ago</p>
-                            </div>
-
-                            <img
-                                src={enter4}
-                                alt="News"
-                                className="h-28 w-28 object-cover rounded"
-                            />
-                        </div>
+                    <div className="space-y-2 pt-6">
+                        <img
+                            src={adsbanner2}
+                            alt="Documentary"
+                            className="w-full h-44 object-cover rounded"
+                        />
                     </div>
                     <hr className="border-gray-300 my-0" />
 

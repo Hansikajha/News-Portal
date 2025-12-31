@@ -6,6 +6,7 @@ import health4 from "../assets/health4.jpeg";
 import health5 from "../assets/health5.jpeg";
 import health6 from "../assets/health6.jpeg";
 import health7 from "../assets/health7.jpeg";
+import adsbanner from "../assets/adsbanner.png";
 
 export default function Health() {
 
@@ -41,6 +42,15 @@ export default function Health() {
 
   return (
     <section className="max-w-7xl mx-auto px-4 py-6">
+
+      {/* Advertisement banner */}
+      <div className="max-w-full h-[100px] my-3">
+        <img
+          src={adsbanner}
+          alt="Advertisement"
+          className="mx-auto max-w-full h-auto"
+        />
+      </div>
 
       {/* 1st Section */}
       <div className="space-y-8 mt-8">
@@ -219,6 +229,15 @@ export default function Health() {
             </h3>
           </div>
         ))}
+      </div>
+
+      {/* Advertisement banner */}
+      <div className="max-w-full h-[100px] my-3">
+        <img
+          src={adsbanner}
+          alt="Advertisement"
+          className="mx-auto max-w-full h-auto"
+        />
       </div>
 
       {/* 2nd part*/}

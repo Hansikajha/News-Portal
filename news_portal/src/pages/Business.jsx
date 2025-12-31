@@ -142,6 +142,15 @@ export default function Business() {
 
       </section>
 
+      {/* Advertisement banner */}
+      <div className="max-w-full h-[100px] my-5">
+        <img
+          src={adsbanner}
+          alt="Advertisement"
+          className="mx-auto max-w-full h-auto"
+        />
+      </div>
+
       {/* Wellness Section */}
       <div className="pt-10 mt-10 border-t border-gray-300">
         <div className="px-4 sm:px-6 lg:px-8 bg-gray-800">
@@ -338,6 +347,15 @@ export default function Business() {
         </div>
       </section>
       <hr className="border-gray-300 my-0" />
+
+      {/* Advertisement banner */}
+      <div className="max-w-full h-[100px] my-5">
+        <img
+          src={adsbanner}
+          alt="Advertisement"
+          className="mx-auto max-w-full h-auto"
+        />
+      </div>
 
       {/* Market Widgets */}
       <section className="max-w-7xl mx-auto px-4 py-6">

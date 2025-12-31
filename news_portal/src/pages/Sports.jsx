@@ -6,6 +6,7 @@ import sports3 from "../assets/sports3.jpeg";
 import sports4 from "../assets/sports4.jpeg";
 import sports5 from "../assets/sports5.jpeg";
 import sports6 from "../assets/sports6.jpeg";
+import adsbanner from "../assets/adsbanner.png";
 
 export default function Sports() {
 
@@ -41,6 +42,15 @@ export default function Sports() {
   return (
     <>
       <section className="max-w-7xl mx-auto px-4 py-6">
+
+        {/* Advertisement banner */}
+        <div className="max-w-full h-[100px] my-5">
+          <img
+            src={adsbanner}
+            alt="Advertisement"
+            className="mx-auto max-w-full h-auto"
+          />
+        </div>
 
         {/* 1st Section */}
         <div className="space-y-8 mt-8">
